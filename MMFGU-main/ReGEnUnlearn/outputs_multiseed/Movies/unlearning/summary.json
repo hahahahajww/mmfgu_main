@@ -1,0 +1,41 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Movies",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "pretrain": {
+      "avg_val_acc": {
+        "mean": 0.5036632339159648,
+        "std": 0.003675269981482346
+      },
+      "avg_test_acc": {
+        "mean": 0.4993538906176885,
+        "std": 0.009252693424149541
+      }
+    },
+    "unlearning": {
+      "after_avg_val_acc": {
+        "mean": 0.5125990984616456,
+        "std": 0.008545031362020988
+      },
+      "after_avg_test_acc": {
+        "mean": 0.5076409898422383,
+        "std": 0.0072869623797987134
+      }
+    }
+  },
+  "summary_pretty": {
+    "pretrain": {
+      "avg_val_acc": "50.37 \u00b1 0.37",
+      "avg_test_acc": "49.94 \u00b1 0.93"
+    },
+    "unlearning": {
+      "after_avg_val_acc": "51.26 \u00b1 0.85",
+      "after_avg_test_acc": "50.76 \u00b1 0.73"
+    }
+  }
+}

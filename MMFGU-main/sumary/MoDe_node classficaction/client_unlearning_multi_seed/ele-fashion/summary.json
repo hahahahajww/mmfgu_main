@@ -1,0 +1,47 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\ele-fashion",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "client_unlearning": {
+      "before_avg_val_acc": {
+        "mean": 0.9734709560871124,
+        "std": 0.002290203266350381
+      },
+      "before_avg_test_acc": {
+        "mean": 0.9728877961635589,
+        "std": 0.004672167144493233
+      },
+      "after_avg_val_acc": {
+        "mean": 0.9626030464967092,
+        "std": 0.0033251147912816146
+      },
+      "after_avg_test_acc": {
+        "mean": 0.9626304725805919,
+        "std": 0.0060553326765942096
+      },
+      "delta_avg_val_acc": {
+        "mean": -0.010867909590403216,
+        "std": 0.003495321275188943
+      },
+      "delta_avg_test_acc": {
+        "mean": -0.010257323582967123,
+        "std": 0.003911324808648775
+      }
+    }
+  },
+  "summary_pretty": {
+    "client_unlearning": {
+      "before_avg_val_acc": "97.35 \u00b1 0.23",
+      "before_avg_test_acc": "97.29 \u00b1 0.47",
+      "after_avg_val_acc": "96.26 \u00b1 0.33",
+      "after_avg_test_acc": "96.26 \u00b1 0.61",
+      "delta_avg_val_acc": "-1.09 \u00b1 0.35",
+      "delta_avg_test_acc": "-1.03 \u00b1 0.39"
+    }
+  }
+}

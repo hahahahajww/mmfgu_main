@@ -1,0 +1,127 @@
+{
+  "pretrain": [
+    {
+      "avg_val_mrr": 0.9351197123527527,
+      "avg_val_hits@3": 0.9980843186378479,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9570290386676789,
+      "avg_test_mrr": 0.9177339434623718,
+      "avg_test_hits@3": 0.9970685362815856,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9562324106693267,
+      "round": 10
+    },
+    {
+      "avg_val_mrr": 0.9546826899051666,
+      "avg_val_hits@3": 0.9998044967651367,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9707848727703094,
+      "avg_test_mrr": 0.941758543252945,
+      "avg_test_hits@3": 0.9993476331233978,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9703891336917877,
+      "round": 20
+    },
+    {
+      "avg_val_mrr": 0.9649298071861268,
+      "avg_val_hits@3": 0.9998044967651367,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.977911502122879,
+      "avg_test_mrr": 0.9550001800060273,
+      "avg_test_hits@3": 0.9995090901851654,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9772053360939026,
+      "round": 30
+    },
+    {
+      "avg_val_mrr": 0.9704142808914185,
+      "avg_val_hits@3": 0.9999022483825684,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9813046216964721,
+      "avg_test_mrr": 0.9620355486869812,
+      "avg_test_hits@3": 0.9996489346027374,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9806021690368653,
+      "round": 40
+    },
+    {
+      "avg_val_mrr": 0.9751299262046814,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.984008663892746,
+      "avg_test_mrr": 0.9688616156578064,
+      "avg_test_hits@3": 0.9998052895069123,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9839890420436859,
+      "round": 50
+    },
+    {
+      "avg_val_mrr": 0.976355355978012,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9847270727157593,
+      "avg_test_mrr": 0.9694854319095612,
+      "avg_test_hits@3": 0.9996423184871673,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9842038631439209,
+      "round": 60
+    },
+    {
+      "avg_val_mrr": 0.9767138242721558,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9849302113056183,
+      "avg_test_mrr": 0.9696228921413421,
+      "avg_test_hits@3": 0.9996582269668579,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9843529164791107,
+      "round": 70
+    },
+    {
+      "avg_val_mrr": 0.9772815227508544,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9854657709598541,
+      "avg_test_mrr": 0.9704206347465515,
+      "avg_test_hits@3": 0.9997324049472809,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9847257018089295,
+      "round": 80
+    },
+    {
+      "avg_val_mrr": 0.9773628830909729,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.985591036081314,
+      "avg_test_mrr": 0.971052610874176,
+      "avg_test_hits@3": 0.9998211979866027,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9850566923618317,
+      "round": 90
+    },
+    {
+      "avg_val_mrr": 0.977964061498642,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9860583364963531,
+      "avg_test_mrr": 0.9716722071170807,
+      "avg_test_hits@3": 0.999804162979126,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9853479325771332,
+      "round": 100
+    }
+  ],
+  "purge": [
+    {
+      "avg_val_mrr": 0.9766693234443664,
+      "avg_val_hits@3": 1.0,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.985069215297699,
+      "avg_test_mrr": 0.9711348414421082,
+      "avg_test_hits@3": 0.999804162979126,
+      "avg_test_hits@10": 0.9999999880790711,
+      "avg_test_auc_roc": 0.9851359784603119,
+      "round": 8
+    }
+  ]
+}

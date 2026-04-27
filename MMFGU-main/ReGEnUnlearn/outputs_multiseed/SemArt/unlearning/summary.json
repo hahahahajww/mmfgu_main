@@ -1,0 +1,41 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\SemArt",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "pretrain": {
+      "avg_val_acc": {
+        "mean": 0.8627787331740061,
+        "std": 0.007839119548691528
+      },
+      "avg_test_acc": {
+        "mean": 0.8653579354286194,
+        "std": 0.0018702585546406057
+      }
+    },
+    "unlearning": {
+      "after_avg_val_acc": {
+        "mean": 0.8472076919343736,
+        "std": 0.00937106104770095
+      },
+      "after_avg_test_acc": {
+        "mean": 0.84848713433301,
+        "std": 0.013117838900341584
+      }
+    }
+  },
+  "summary_pretty": {
+    "pretrain": {
+      "avg_val_acc": "86.28 \u00b1 0.78",
+      "avg_test_acc": "86.54 \u00b1 0.19"
+    },
+    "unlearning": {
+      "after_avg_val_acc": "84.72 \u00b1 0.94",
+      "after_avg_test_acc": "84.85 \u00b1 1.31"
+    }
+  }
+}

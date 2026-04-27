@@ -1,0 +1,47 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Grocery",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "fedkd": {
+      "before_avg_val_acc": {
+        "mean": 0.8203644951184591,
+        "std": 0.0014091553857696882
+      },
+      "before_avg_test_acc": {
+        "mean": 0.8217158185111152,
+        "std": 0.010938792233617791
+      },
+      "after_avg_val_acc": {
+        "mean": 0.8159672485457526,
+        "std": 0.0020724429763463404
+      },
+      "after_avg_test_acc": {
+        "mean": 0.8153559433089362,
+        "std": 0.011990472186574426
+      },
+      "delta_avg_val_acc": {
+        "mean": -0.004397246572706422,
+        "std": 0.003421238007856655
+      },
+      "delta_avg_test_acc": {
+        "mean": -0.006359875202178918,
+        "std": 0.011548804278942039
+      }
+    }
+  },
+  "summary_pretty": {
+    "fedkd": {
+      "before_avg_val_acc": "82.04 \u00b1 0.14",
+      "before_avg_test_acc": "82.17 \u00b1 1.09",
+      "after_avg_val_acc": "81.60 \u00b1 0.21",
+      "after_avg_test_acc": "81.54 \u00b1 1.20",
+      "delta_avg_val_acc": "-0.44 \u00b1 0.34",
+      "delta_avg_test_acc": "-0.64 \u00b1 1.15"
+    }
+  }
+}

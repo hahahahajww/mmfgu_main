@@ -1,0 +1,30 @@
+{
+  "pretrain_final": {
+    "avg_train_acc": 0.8701852142810822,
+    "avg_val_acc": 0.7939955174922944,
+    "avg_test_acc": 0.7934542953968048
+  },
+  "fed_eraser": {
+    "removed_client_id": 0,
+    "retain_interval": 2,
+    "calibration_ratio": 2.0,
+    "calibration_local_epochs": 4,
+    "retained_round_count": 50,
+    "before_global_metrics": {
+      "avg_train_acc": 0.8776075310177274,
+      "avg_val_acc": 0.8011932240592109,
+      "avg_test_acc": 0.8064524796273973
+    },
+    "after_global_metrics": {
+      "avg_train_acc": 0.8569048179520501,
+      "avg_val_acc": 0.8122832443979051,
+      "avg_test_acc": 0.8117989699045817
+    },
+    "metric_delta": {
+      "avg_train_acc_delta": -0.02070271306567728,
+      "avg_val_acc_delta": 0.011090020338694218,
+      "avg_test_acc_delta": 0.005346490277184368
+    },
+    "reconstruction_seconds": 63.287792444229126
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\ele-fashion",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "pretrain": {
+      "avg_val_acc": {
+        "mean": 0.9646071275075276,
+        "std": 0.005716183745414444
+      },
+      "avg_test_acc": {
+        "mean": 0.9650271574656168,
+        "std": 0.003449834131099737
+      }
+    },
+    "unlearning": {
+      "after_avg_val_acc": {
+        "mean": 0.9682392433837608,
+        "std": 0.0010864368405138973
+      },
+      "after_avg_test_acc": {
+        "mean": 0.968632146164223,
+        "std": 0.0029033265365208936
+      }
+    }
+  },
+  "summary_pretty": {
+    "pretrain": {
+      "avg_val_acc": "96.46 \u00b1 0.57",
+      "avg_test_acc": "96.50 \u00b1 0.34"
+    },
+    "unlearning": {
+      "after_avg_val_acc": "96.82 \u00b1 0.11",
+      "after_avg_test_acc": "96.86 \u00b1 0.29"
+    }
+  }
+}

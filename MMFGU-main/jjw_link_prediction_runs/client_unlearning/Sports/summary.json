@@ -1,0 +1,393 @@
+{
+  "mode": "client_unlearning",
+  "data_dir": "/root/autodl-tmp/MMFGU/datasets/Sports",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "runs": [
+    {
+      "pretrain_final": {
+        "avg_val_mrr": 0.8432118594646454,
+        "avg_val_hits@3": 0.9625985324382782,
+        "avg_val_hits@10": 0.9999999821186065,
+        "avg_val_auc_roc": 0.8724001109600067,
+        "avg_test_mrr": 0.8240074813365936,
+        "avg_test_hits@3": 0.9497659981250763,
+        "avg_test_hits@10": 0.9999999761581421,
+        "avg_test_auc_roc": 0.8712573826313019
+      },
+      "unlearning": null,
+      "retrain_baseline": null,
+      "client_unlearning": {
+        "removed_client_id": 0,
+        "before_global_metrics": {
+          "avg_val_mrr": 0.8488214148415459,
+          "avg_val_hits@3": 0.9673415025075277,
+          "avg_val_hits@10": 0.999999980131785,
+          "avg_val_auc_roc": 0.8723132941457961,
+          "avg_test_mrr": 0.8281072974205017,
+          "avg_test_hits@3": 0.9535137481159635,
+          "avg_test_hits@10": 0.999999980131785,
+          "avg_test_auc_roc": 0.8714340792761909
+        },
+        "after_global_metrics": {
+          "avg_val_mrr": 0.8462615344259474,
+          "avg_val_hits@3": 0.9663136800130209,
+          "avg_val_hits@10": 0.999999980131785,
+          "avg_val_auc_roc": 0.8700935244560242,
+          "avg_test_mrr": 0.8260103132989671,
+          "avg_test_hits@3": 0.953054772482978,
+          "avg_test_hits@10": 0.999999980131785,
+          "avg_test_auc_roc": 0.8698320521248711
+        },
+        "metric_delta": {
+          "avg_val_mrr_delta": -0.0025598804155985144,
+          "avg_val_hits@3_delta": -0.001027822494506836,
+          "avg_val_hits@10_delta": 0.0,
+          "avg_val_auc_roc_delta": -0.002219769689771889,
+          "avg_test_mrr_delta": -0.002096984121534584,
+          "avg_test_hits@3_delta": -0.00045897563298546995,
+          "avg_test_hits@10_delta": 0.0,
+          "avg_test_auc_roc_delta": -0.0016020271513197404
+        },
+        "affected_client_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "affected_client_count": 9,
+        "prototype_similarities": [
+          {
+            "client_id": 5,
+            "similarity": 0.9762366414070129
+          },
+          {
+            "client_id": 7,
+            "similarity": 0.9739992618560791
+          },
+          {
+            "client_id": 4,
+            "similarity": 0.9726077318191528
+          },
+          {
+            "client_id": 6,
+            "similarity": 0.9713037014007568
+          },
+          {
+            "client_id": 2,
+            "similarity": 0.9711068272590637
+          },
+          {
+            "client_id": 9,
+            "similarity": 0.9700986742973328
+          },
+          {
+            "client_id": 8,
+            "similarity": 0.9637213349342346
+          },
+          {
+            "client_id": 3,
+            "similarity": 0.9634920358657837
+          },
+          {
+            "client_id": 1,
+            "similarity": 0.9411908388137817
+          }
+        ],
+        "probe_stats": {
+          "probe_count": 50
+        },
+        "affected_client_final_mean_test_metric": 0.8698320521248711
+      },
+      "client_retrain_baseline": null
+    },
+    {
+      "pretrain_final": {
+        "avg_val_mrr": 0.8201731622219086,
+        "avg_val_hits@3": 0.9495763719081879,
+        "avg_val_hits@10": 0.9999999940395355,
+        "avg_val_auc_roc": 0.8541843175888062,
+        "avg_test_mrr": 0.815206515789032,
+        "avg_test_hits@3": 0.9451667547225953,
+        "avg_test_hits@10": 0.9999999940395355,
+        "avg_test_auc_roc": 0.8539101541042328
+      },
+      "unlearning": null,
+      "retrain_baseline": null,
+      "client_unlearning": {
+        "removed_client_id": 0,
+        "before_global_metrics": {
+          "avg_val_mrr": 0.8200854659080505,
+          "avg_val_hits@3": 0.949590351846483,
+          "avg_val_hits@10": 0.9999999933772616,
+          "avg_val_auc_roc": 0.8559719853931003,
+          "avg_test_mrr": 0.818579700258043,
+          "avg_test_hits@3": 0.9494784937964545,
+          "avg_test_hits@10": 1.0,
+          "avg_test_auc_roc": 0.8560062381956313
+        },
+        "after_global_metrics": {
+          "avg_val_mrr": 0.8186622858047485,
+          "avg_val_hits@3": 0.9513708551724752,
+          "avg_val_hits@10": 0.9999999933772616,
+          "avg_val_auc_roc": 0.8557792041036818,
+          "avg_test_mrr": 0.8171835078133477,
+          "avg_test_hits@3": 0.9472376571761237,
+          "avg_test_hits@10": 1.0,
+          "avg_test_auc_roc": 0.8540671136644151
+        },
+        "metric_delta": {
+          "avg_val_mrr_delta": -0.001423180103302002,
+          "avg_val_hits@3_delta": 0.001780503325992222,
+          "avg_val_hits@10_delta": 0.0,
+          "avg_val_auc_roc_delta": -0.0001927812894184644,
+          "avg_test_mrr_delta": -0.0013961924446953544,
+          "avg_test_hits@3_delta": -0.0022408366203308105,
+          "avg_test_hits@10_delta": 0.0,
+          "avg_test_auc_roc_delta": -0.001939124531216141
+        },
+        "affected_client_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "affected_client_count": 9,
+        "prototype_similarities": [
+          {
+            "client_id": 6,
+            "similarity": 0.9619899988174438
+          },
+          {
+            "client_id": 8,
+            "similarity": 0.9549127817153931
+          },
+          {
+            "client_id": 5,
+            "similarity": 0.951754629611969
+          },
+          {
+            "client_id": 9,
+            "similarity": 0.948457658290863
+          },
+          {
+            "client_id": 4,
+            "similarity": 0.9389001131057739
+          },
+          {
+            "client_id": 7,
+            "similarity": 0.9383206963539124
+          },
+          {
+            "client_id": 3,
+            "similarity": 0.9344933032989502
+          },
+          {
+            "client_id": 1,
+            "similarity": 0.9236249923706055
+          },
+          {
+            "client_id": 2,
+            "similarity": 0.9160792827606201
+          }
+        ],
+        "probe_stats": {
+          "probe_count": 50
+        },
+        "affected_client_final_mean_test_metric": 0.8540671136644151
+      },
+      "client_retrain_baseline": null
+    },
+    {
+      "pretrain_final": {
+        "avg_val_mrr": 0.8353785872459412,
+        "avg_val_hits@3": 0.9621611177921295,
+        "avg_val_hits@10": 0.9999999940395355,
+        "avg_val_auc_roc": 0.8590015172958374,
+        "avg_test_mrr": 0.818697452545166,
+        "avg_test_hits@3": 0.9464129686355591,
+        "avg_test_hits@10": 0.9999999880790711,
+        "avg_test_auc_roc": 0.8597318530082703
+      },
+      "unlearning": null,
+      "retrain_baseline": null,
+      "client_unlearning": {
+        "removed_client_id": 0,
+        "before_global_metrics": {
+          "avg_val_mrr": 0.8375599251853095,
+          "avg_val_hits@3": 0.9641606211662292,
+          "avg_val_hits@10": 0.9999999933772616,
+          "avg_val_auc_roc": 0.857624716228909,
+          "avg_test_mrr": 0.8156791395611234,
+          "avg_test_hits@3": 0.9437577989366319,
+          "avg_test_hits@10": 0.9999999933772616,
+          "avg_test_auc_roc": 0.8587577674123976
+        },
+        "after_global_metrics": {
+          "avg_val_mrr": 0.8404706186718411,
+          "avg_val_hits@3": 0.968839963277181,
+          "avg_val_hits@10": 0.9999999933772616,
+          "avg_val_auc_roc": 0.8626659446292453,
+          "avg_test_mrr": 0.8203973571459452,
+          "avg_test_hits@3": 0.9486880633566115,
+          "avg_test_hits@10": 0.9999999933772616,
+          "avg_test_auc_roc": 0.8639297948943244
+        },
+        "metric_delta": {
+          "avg_val_mrr_delta": 0.0029106934865316125,
+          "avg_val_hits@3_delta": 0.0046793421109517785,
+          "avg_val_hits@10_delta": 0.0,
+          "avg_val_auc_roc_delta": 0.005041228400336273,
+          "avg_test_mrr_delta": 0.004718217584821827,
+          "avg_test_hits@3_delta": 0.004930264419979569,
+          "avg_test_hits@10_delta": 0.0,
+          "avg_test_auc_roc_delta": 0.0051720274819268
+        },
+        "affected_client_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "affected_client_count": 9,
+        "prototype_similarities": [
+          {
+            "client_id": 7,
+            "similarity": 0.9704558849334717
+          },
+          {
+            "client_id": 8,
+            "similarity": 0.969460666179657
+          },
+          {
+            "client_id": 9,
+            "similarity": 0.9622711539268494
+          },
+          {
+            "client_id": 5,
+            "similarity": 0.9553186893463135
+          },
+          {
+            "client_id": 6,
+            "similarity": 0.9503781795501709
+          },
+          {
+            "client_id": 4,
+            "similarity": 0.9462699890136719
+          },
+          {
+            "client_id": 3,
+            "similarity": 0.9318097829818726
+          },
+          {
+            "client_id": 1,
+            "similarity": 0.9300634264945984
+          },
+          {
+            "client_id": 2,
+            "similarity": 0.9113175868988037
+          }
+        ],
+        "probe_stats": {
+          "probe_count": 50
+        },
+        "affected_client_final_mean_test_metric": 0.8639297948943244
+      },
+      "client_retrain_baseline": null
+    }
+  ],
+  "summary": {
+    "client_unlearning": {
+      "before_avg_val_mrr": {
+        "mean": 0.8354889353116354,
+        "std": 0.014479483401342731
+      },
+      "before_avg_test_mrr": {
+        "mean": 0.8207887124132227,
+        "std": 0.006501890338255907
+      },
+      "before_avg_val_hits@3": {
+        "mean": 0.9603641585067466,
+        "std": 0.009464971420527973
+      },
+      "before_avg_test_hits@3": {
+        "mean": 0.9489166802830167,
+        "std": 0.004902179302650608
+      },
+      "before_avg_val_auc_roc": {
+        "mean": 0.8619699985892685,
+        "std": 0.0089955934785411
+      },
+      "before_avg_test_auc_roc": {
+        "mean": 0.8620660282947399,
+        "std": 0.008228791688393739
+      },
+      "after_avg_val_mrr": {
+        "mean": 0.835131479634179,
+        "std": 0.014553674290752243
+      },
+      "after_avg_test_mrr": {
+        "mean": 0.82119705941942,
+        "std": 0.004467411618027926
+      },
+      "after_avg_val_hits@3": {
+        "mean": 0.9621748328208923,
+        "std": 0.009441396959842172
+      },
+      "after_avg_test_hits@3": {
+        "mean": 0.949660164338571,
+        "std": 0.003027943669002874
+      },
+      "after_avg_val_auc_roc": {
+        "mean": 0.8628462243963171,
+        "std": 0.007158862855452836
+      },
+      "after_avg_test_auc_roc": {
+        "mean": 0.8626096535612036,
+        "std": 0.007964948274788223
+      },
+      "delta_avg_val_mrr": {
+        "mean": -0.0003574556774563013,
+        "std": 0.002886801191379469
+      },
+      "delta_avg_test_mrr": {
+        "mean": 0.000408347006197296,
+        "std": 0.0037488685689087307
+      },
+      "delta_avg_val_hits@3": {
+        "mean": 0.0018106743141457216,
+        "std": 0.002853701924666365
+      },
+      "delta_avg_test_hits@3": {
+        "mean": 0.0007434840555544294,
+        "std": 0.003733711894282653
+      },
+      "delta_avg_val_auc_roc": {
+        "mean": 0.0008762258070486398,
+        "std": 0.003746679255735853
+      },
+      "delta_avg_test_auc_roc": {
+        "mean": 0.0005436252664636395,
+        "std": 0.004011856049506447
+      }
+    }
+  }
+}

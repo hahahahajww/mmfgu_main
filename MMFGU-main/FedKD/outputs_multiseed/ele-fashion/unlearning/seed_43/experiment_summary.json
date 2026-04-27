@@ -1,0 +1,30 @@
+{
+  "pretrain_final": {
+    "avg_train_acc": 0.9850779831409454,
+    "avg_val_acc": 0.9710336327552795,
+    "avg_test_acc": 0.9685204684734344
+  },
+  "fedkd": {
+    "removed_client_id": 0,
+    "before_global_metrics": {
+      "avg_train_acc": 0.9848610162734985,
+      "avg_val_acc": 0.9697248670789931,
+      "avg_test_acc": 0.9679159720738729
+    },
+    "after_global_metrics": {
+      "avg_train_acc": 0.986659136083391,
+      "avg_val_acc": 0.9717187086741129,
+      "avg_test_acc": 0.97036745150884
+    },
+    "metric_delta": {
+      "avg_train_acc_delta": 0.0017981198098924178,
+      "avg_val_acc_delta": 0.0019938415951198385,
+      "avg_test_acc_delta": 0.002451479434967041
+    },
+    "distill_epochs": 8,
+    "distill_lr": 0.0005,
+    "distill_temperature": 2.0,
+    "historical_round_count": 100
+  },
+  "client_retrain_baseline": null
+}

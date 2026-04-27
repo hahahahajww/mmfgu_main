@@ -1,0 +1,91 @@
+{
+  "pretrain_final": {
+    "avg_train_acc": 0.9283791542053222,
+    "avg_val_acc": 0.8597629487514495,
+    "avg_test_acc": 0.8648054122924804
+  },
+  "unlearning": {
+    "target_client_ids": [
+      0
+    ],
+    "before_global_metrics": {
+      "avg_train_acc": 0.9283791542053222,
+      "avg_val_acc": 0.8597629487514495,
+      "avg_test_acc": 0.8648054122924804
+    },
+    "after_remaining_metrics": {
+      "avg_train_acc": 0.8887245323922899,
+      "avg_val_acc": 0.8399671316146851,
+      "avg_test_acc": 0.8411621318923103
+    },
+    "metric_delta": {
+      "avg_train_acc_delta": -0.039654621813032365,
+      "avg_val_acc_delta": -0.019795817136764482,
+      "avg_test_acc_delta": -0.023643280400170164
+    },
+    "affected_client_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "prototype_similarities": [
+      {
+        "client_id": 7,
+        "similarity": 0.7485672235488892
+      },
+      {
+        "client_id": 6,
+        "similarity": 0.6053866744041443
+      },
+      {
+        "client_id": 2,
+        "similarity": 0.5679848194122314
+      },
+      {
+        "client_id": 3,
+        "similarity": 0.5049217939376831
+      },
+      {
+        "client_id": 5,
+        "similarity": 0.4738968312740326
+      },
+      {
+        "client_id": 4,
+        "similarity": 0.4474599063396454
+      },
+      {
+        "client_id": 8,
+        "similarity": 0.44680628180503845
+      },
+      {
+        "client_id": 9,
+        "similarity": 0.422335147857666
+      },
+      {
+        "client_id": 1,
+        "similarity": 0.023317387327551842
+      }
+    ],
+    "target_artifacts": [
+      {
+        "client_id": 0,
+        "selected_node_count": 534,
+        "sampled_subgraph_nodes": 1616,
+        "sampler_reward": 0.8199376523931924,
+        "overlap_proxy": 0.3834341764450073,
+        "utility_after_sampler_ascent": 0.7199999690055847,
+        "prompt": {
+          "token_count": 16,
+          "insert_count": 323,
+          "prompt_norm": 0.8019567131996155
+        }
+      }
+    ]
+  },
+  "retrain_baseline": null
+}

@@ -1,0 +1,127 @@
+{
+  "pretrain": [
+    {
+      "avg_val_mrr": 0.742818808555603,
+      "avg_val_hits@3": 0.9192049086093903,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.8305358946323395,
+      "avg_test_mrr": 0.7627725780010224,
+      "avg_test_hits@3": 0.9270085453987121,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.8350219190120697,
+      "round": 10
+    },
+    {
+      "avg_val_mrr": 0.7800764918327332,
+      "avg_val_hits@3": 0.9460524022579193,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.8627927124500274,
+      "avg_test_mrr": 0.8006687819957733,
+      "avg_test_hits@3": 0.9444337904453277,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.8667039275169373,
+      "round": 20
+    },
+    {
+      "avg_val_mrr": 0.7984660923480987,
+      "avg_val_hits@3": 0.951596450805664,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.8753722012042999,
+      "avg_test_mrr": 0.8157003164291382,
+      "avg_test_hits@3": 0.9529165267944336,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.8794437170028686,
+      "round": 30
+    },
+    {
+      "avg_val_mrr": 0.8202532887458801,
+      "avg_val_hits@3": 0.9598314106464386,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.8904481709003449,
+      "avg_test_mrr": 0.8314584612846374,
+      "avg_test_hits@3": 0.9569819092750549,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.8912215232849121,
+      "round": 40
+    },
+    {
+      "avg_val_mrr": 0.8351339817047119,
+      "avg_val_hits@3": 0.9633397698402405,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9001257419586182,
+      "avg_test_mrr": 0.8478933691978454,
+      "avg_test_hits@3": 0.9678397655487061,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.9044350743293762,
+      "round": 50
+    },
+    {
+      "avg_val_mrr": 0.8427790522575378,
+      "avg_val_hits@3": 0.966415137052536,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.904197883605957,
+      "avg_test_mrr": 0.855169153213501,
+      "avg_test_hits@3": 0.9642224073410034,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.908202987909317,
+      "round": 60
+    },
+    {
+      "avg_val_mrr": 0.8547983467578888,
+      "avg_val_hits@3": 0.968934816122055,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9119755327701569,
+      "avg_test_mrr": 0.8656157612800598,
+      "avg_test_hits@3": 0.9689868032932282,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.9157127261161804,
+      "round": 70
+    },
+    {
+      "avg_val_mrr": 0.863794457912445,
+      "avg_val_hits@3": 0.9690870583057404,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9173651456832885,
+      "avg_test_mrr": 0.874696683883667,
+      "avg_test_hits@3": 0.9704619467258453,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.9217569887638092,
+      "round": 80
+    },
+    {
+      "avg_val_mrr": 0.8652655184268951,
+      "avg_val_hits@3": 0.9711549997329711,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9182734787464142,
+      "avg_test_mrr": 0.8749347567558289,
+      "avg_test_hits@3": 0.9694540619850158,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.9215028584003448,
+      "round": 90
+    },
+    {
+      "avg_val_mrr": 0.8694924116134644,
+      "avg_val_hits@3": 0.9726135849952697,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9215059757232666,
+      "avg_test_mrr": 0.8814562320709228,
+      "avg_test_hits@3": 0.9757238566875458,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.9262903213500977,
+      "round": 100
+    }
+  ],
+  "purge": [
+    {
+      "avg_val_mrr": 0.8620077133178711,
+      "avg_val_hits@3": 0.97088343501091,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9166304528713226,
+      "avg_test_mrr": 0.8738800287246704,
+      "avg_test_hits@3": 0.9708781838417053,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.9215446531772613,
+      "round": 8
+    }
+  ]
+}

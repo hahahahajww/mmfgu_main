@@ -1,0 +1,92 @@
+{
+  "pretrain_final": {
+    "avg_train_acc": 0.6807427167892456,
+    "avg_val_acc": 0.5001213043928147,
+    "avg_test_acc": 0.4886740744113922
+  },
+  "unlearning": {
+    "target_client_ids": [
+      0
+    ],
+    "before_global_metrics": {
+      "avg_train_acc": 0.6807427167892456,
+      "avg_val_acc": 0.5001213043928147,
+      "avg_test_acc": 0.4886740744113922
+    },
+    "after_remaining_metrics": {
+      "avg_train_acc": 0.6943582693735758,
+      "avg_val_acc": 0.5145043863190545,
+      "avg_test_acc": 0.5137014786402384
+    },
+    "metric_delta": {
+      "avg_train_acc_delta": 0.013615552584330226,
+      "avg_val_acc_delta": 0.014383081926239827,
+      "avg_test_acc_delta": 0.025027404228846195
+    },
+    "affected_client_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "prototype_similarities": [
+      {
+        "client_id": 7,
+        "similarity": 0.7906299829483032
+      },
+      {
+        "client_id": 3,
+        "similarity": 0.7279968857765198
+      },
+      {
+        "client_id": 5,
+        "similarity": 0.7003780007362366
+      },
+      {
+        "client_id": 4,
+        "similarity": 0.6820218563079834
+      },
+      {
+        "client_id": 1,
+        "similarity": 0.6705614924430847
+      },
+      {
+        "client_id": 9,
+        "similarity": 0.648972749710083
+      },
+      {
+        "client_id": 8,
+        "similarity": 0.572280764579773
+      },
+      {
+        "client_id": 6,
+        "similarity": 0.5713440775871277
+      },
+      {
+        "client_id": 2,
+        "similarity": 0.14734086394309998
+      }
+    ],
+    "target_artifacts": [
+      {
+        "client_id": 0,
+        "selected_node_count": 333,
+        "sampled_subgraph_nodes": 999,
+        "sampler_reward": 0.7298205725274598,
+        "overlap_proxy": 0.8917134404182434,
+        "utility_after_sampler_ascent": 0.25,
+        "prompt": {
+          "token_count": 16,
+          "insert_count": 149,
+          "prompt_norm": 0.7034086585044861
+        }
+      }
+    ]
+  },
+  "retrain_baseline": null
+}

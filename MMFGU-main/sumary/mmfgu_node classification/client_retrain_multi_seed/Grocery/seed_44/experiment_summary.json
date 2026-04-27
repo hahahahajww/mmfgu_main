@@ -1,0 +1,15 @@
+{
+  "pretrain_final": null,
+  "unlearning": null,
+  "retrain_baseline": null,
+  "client_unlearning": null,
+  "client_retrain_baseline": {
+    "removed_client_id": 0,
+    "remaining_client_count": 9,
+    "final_metrics": {
+      "avg_train_acc": 0.9242638018396165,
+      "avg_val_acc": 0.8222967982292175,
+      "avg_test_acc": 0.8203607135348849
+    }
+  }
+}

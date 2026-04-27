@@ -1,0 +1,99 @@
+{
+  "mode": "client_retrain",
+  "data_dir": "/root/autodl-tmp/MMFGU/datasets/Movies",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "runs": [
+    {
+      "pretrain_final": null,
+      "unlearning": null,
+      "retrain_baseline": null,
+      "client_unlearning": null,
+      "client_retrain_baseline": {
+        "removed_client_id": 0,
+        "remaining_client_count": 9,
+        "final_metrics": {
+          "avg_val_mrr": 0.9057796200116476,
+          "avg_val_hits@3": 0.9848125378290812,
+          "avg_val_hits@10": 0.9999999933772616,
+          "avg_val_auc_roc": 0.943887452284495,
+          "avg_test_mrr": 0.8849053117964003,
+          "avg_test_hits@3": 0.9769924680391947,
+          "avg_test_hits@10": 0.9999999867545234,
+          "avg_test_auc_roc": 0.9397956728935242
+        }
+      }
+    },
+    {
+      "pretrain_final": null,
+      "unlearning": null,
+      "retrain_baseline": null,
+      "client_unlearning": null,
+      "client_retrain_baseline": {
+        "removed_client_id": 0,
+        "remaining_client_count": 9,
+        "final_metrics": {
+          "avg_val_mrr": 0.9021003378762139,
+          "avg_val_hits@3": 0.9877635637919108,
+          "avg_val_hits@10": 1.0,
+          "avg_val_auc_roc": 0.9434912933243645,
+          "avg_test_mrr": 0.897322416305542,
+          "avg_test_hits@3": 0.9860873156123691,
+          "avg_test_hits@10": 0.9999999933772616,
+          "avg_test_auc_roc": 0.9424590865770975
+        }
+      }
+    },
+    {
+      "pretrain_final": null,
+      "unlearning": null,
+      "retrain_baseline": null,
+      "client_unlearning": null,
+      "client_retrain_baseline": {
+        "removed_client_id": 0,
+        "remaining_client_count": 9,
+        "final_metrics": {
+          "avg_val_mrr": 0.8708799878756205,
+          "avg_val_hits@3": 0.9718635744518704,
+          "avg_val_hits@10": 0.9999999867545234,
+          "avg_val_auc_roc": 0.9333341386583116,
+          "avg_test_mrr": 0.8786651690800985,
+          "avg_test_hits@3": 0.9742256005605062,
+          "avg_test_hits@10": 1.0,
+          "avg_test_auc_roc": 0.9358588125970628
+        }
+      }
+    }
+  ],
+  "summary": {
+    "client_retrain": {
+      "avg_val_mrr": {
+        "mean": 0.8929199819211606,
+        "std": 0.019175642946290355
+      },
+      "avg_test_mrr": {
+        "mean": 0.8869642990606803,
+        "std": 0.009497514934111974
+      },
+      "avg_val_hits@3": {
+        "mean": 0.9814798920242874,
+        "std": 0.008457677653972508
+      },
+      "avg_test_hits@3": {
+        "mean": 0.9791017947373567,
+        "std": 0.006205804970556317
+      },
+      "avg_val_auc_roc": {
+        "mean": 0.9402376280890571,
+        "std": 0.005981877650097287
+      },
+      "avg_test_auc_roc": {
+        "mean": 0.9393711906892281,
+        "std": 0.003320548600638725
+      }
+    }
+  }
+}

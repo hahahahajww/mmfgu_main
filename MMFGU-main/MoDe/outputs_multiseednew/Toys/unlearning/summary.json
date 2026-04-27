@@ -1,0 +1,47 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Toys",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "client_unlearning": {
+      "before_avg_val_acc": {
+        "mean": 0.7932242949803671,
+        "std": 0.0007872931816669572
+      },
+      "before_avg_test_acc": {
+        "mean": 0.7946881135304769,
+        "std": 0.006974837599331746
+      },
+      "after_avg_val_acc": {
+        "mean": 0.7899793187777201,
+        "std": 0.012279462329425674
+      },
+      "after_avg_test_acc": {
+        "mean": 0.7910054465134938,
+        "std": 0.006236144140972856
+      },
+      "delta_avg_val_acc": {
+        "mean": -0.003244976202646891,
+        "std": 0.011956410111483635
+      },
+      "delta_avg_test_acc": {
+        "mean": -0.0036826670169830176,
+        "std": 0.002947100403004375
+      }
+    }
+  },
+  "summary_pretty": {
+    "client_unlearning": {
+      "before_avg_val_acc": "79.32 \u00b1 0.08",
+      "before_avg_test_acc": "79.47 \u00b1 0.70",
+      "after_avg_val_acc": "79.00 \u00b1 1.23",
+      "after_avg_test_acc": "79.10 \u00b1 0.62",
+      "delta_avg_val_acc": "-0.32 \u00b1 1.20",
+      "delta_avg_test_acc": "-0.37 \u00b1 0.29"
+    }
+  }
+}

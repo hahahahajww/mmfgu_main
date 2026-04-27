@@ -1,0 +1,121 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\SemArt",
+  "task": "node_classification",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "retain_interval": 2,
+  "calibration_ratio": 2.0,
+  "runs": [
+    {
+      "pretrain_final": {
+        "avg_train_acc": 0.9218303620815277,
+        "avg_val_acc": 0.8567398965358735,
+        "avg_test_acc": 0.8639258503913879
+      },
+      "fed_eraser": {
+        "removed_client_id": 0,
+        "retain_interval": 2,
+        "calibration_ratio": 2.0,
+        "calibration_local_epochs": 4,
+        "retained_round_count": 50,
+        "before_global_metrics": {
+          "avg_train_acc": 0.9251592291726006,
+          "avg_val_acc": 0.8614757061004639,
+          "avg_test_acc": 0.8637877702713013
+        },
+        "after_global_metrics": {
+          "avg_train_acc": 0.919193340672387,
+          "avg_val_acc": 0.8648447129461501,
+          "avg_test_acc": 0.8714809616406759
+        },
+        "metric_delta": {
+          "avg_train_acc_delta": -0.005965888500213623,
+          "avg_val_acc_delta": 0.0033690068456861955,
+          "avg_test_acc_delta": 0.00769319136937463
+        },
+        "reconstruction_seconds": 680.6548430919647
+      }
+    },
+    {
+      "pretrain_final": {
+        "avg_train_acc": 0.9196543216705322,
+        "avg_val_acc": 0.8600959241390228,
+        "avg_test_acc": 0.8585927605628967
+      },
+      "fed_eraser": {
+        "removed_client_id": 0,
+        "retain_interval": 2,
+        "calibration_ratio": 2.0,
+        "calibration_local_epochs": 4,
+        "retained_round_count": 50,
+        "before_global_metrics": {
+          "avg_train_acc": 0.9203699694739448,
+          "avg_val_acc": 0.8605741394890679,
+          "avg_test_acc": 0.8595989545186361
+        },
+        "after_global_metrics": {
+          "avg_train_acc": 0.9177066948678758,
+          "avg_val_acc": 0.874244835641649,
+          "avg_test_acc": 0.8665790226724412
+        },
+        "metric_delta": {
+          "avg_train_acc_delta": -0.002663274606068966,
+          "avg_val_acc_delta": 0.013670696152581097,
+          "avg_test_acc_delta": 0.006980068153805141
+        },
+        "reconstruction_seconds": 1062.6738140583038
+      }
+    },
+    {
+      "pretrain_final": {
+        "avg_train_acc": 0.9160317063331604,
+        "avg_val_acc": 0.8551247537136077,
+        "avg_test_acc": 0.8639723420143127
+      },
+      "fed_eraser": {
+        "removed_client_id": 0,
+        "retain_interval": 2,
+        "calibration_ratio": 2.0,
+        "calibration_local_epochs": 4,
+        "retained_round_count": 50,
+        "before_global_metrics": {
+          "avg_train_acc": 0.9201413724157546,
+          "avg_val_acc": 0.8563805222511292,
+          "avg_test_acc": 0.8670153419176737
+        },
+        "after_global_metrics": {
+          "avg_train_acc": 0.9162322680155436,
+          "avg_val_acc": 0.8629662725660536,
+          "avg_test_acc": 0.8700870606634352
+        },
+        "metric_delta": {
+          "avg_train_acc_delta": -0.003909104400210972,
+          "avg_val_acc_delta": 0.006585750314924477,
+          "avg_test_acc_delta": 0.003071718745761509
+        },
+        "reconstruction_seconds": 1095.1895871162415
+      }
+    }
+  ],
+  "summary": {
+    "before_test": {
+      "mean": 0.8634673555692037,
+      "std": 0.0037185615093932693
+    },
+    "after_test": {
+      "mean": 0.8693823483255174,
+      "std": 0.0025258099733520127
+    },
+    "delta_test": {
+      "mean": 0.00591499275631376,
+      "std": 0.0024880296430021594
+    },
+    "reconstruction_seconds": {
+      "mean": 946.1727480888367,
+      "std": 230.51927745816565
+    }
+  }
+}

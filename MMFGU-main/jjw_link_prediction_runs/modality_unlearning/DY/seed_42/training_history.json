@@ -1,0 +1,127 @@
+{
+  "pretrain": [
+    {
+      "avg_val_mrr": 0.34077785909175873,
+      "avg_val_hits@3": 0.3798473209142685,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5299140214920044,
+      "avg_test_mrr": 0.3714542031288147,
+      "avg_test_hits@3": 0.44980140030384064,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.5229395925998688,
+      "round": 10
+    },
+    {
+      "avg_val_mrr": 0.3759196847677231,
+      "avg_val_hits@3": 0.47905242443084717,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5840477108955383,
+      "avg_test_mrr": 0.4201103538274765,
+      "avg_test_hits@3": 0.5513457387685776,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.5896873354911805,
+      "round": 20
+    },
+    {
+      "avg_val_mrr": 0.3709971755743027,
+      "avg_val_hits@3": 0.4776208996772766,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5870349407196045,
+      "avg_test_mrr": 0.41494283378124236,
+      "avg_test_hits@3": 0.5406046003103256,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.5868175685405731,
+      "round": 30
+    },
+    {
+      "avg_val_mrr": 0.32820851504802706,
+      "avg_val_hits@3": 0.3737542450428009,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5169281333684921,
+      "avg_test_mrr": 0.3617273837327957,
+      "avg_test_hits@3": 0.44184733331203463,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.5105965375900269,
+      "round": 40
+    },
+    {
+      "avg_val_mrr": 0.3064614474773407,
+      "avg_val_hits@3": 0.3333834230899811,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.4773941695690155,
+      "avg_test_mrr": 0.3601308077573776,
+      "avg_test_hits@3": 0.46398038864135743,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.5164697438478469,
+      "round": 50
+    },
+    {
+      "avg_val_mrr": 0.3597443997859955,
+      "avg_val_hits@3": 0.42633475363254547,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5432447582483292,
+      "avg_test_mrr": 0.36237484216690063,
+      "avg_test_hits@3": 0.44041957557201383,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.5098336189985275,
+      "round": 60
+    },
+    {
+      "avg_val_mrr": 0.32530826330184937,
+      "avg_val_hits@3": 0.37531204521656036,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5088441371917725,
+      "avg_test_mrr": 0.3362490743398666,
+      "avg_test_hits@3": 0.4072063475847244,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.4764436572790146,
+      "round": 70
+    },
+    {
+      "avg_val_mrr": 0.3292751282453537,
+      "avg_val_hits@3": 0.38297649323940275,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5111644834280014,
+      "avg_test_mrr": 0.33958361595869063,
+      "avg_test_hits@3": 0.40568582713603973,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.47896564602851865,
+      "round": 80
+    },
+    {
+      "avg_val_mrr": 0.3311933606863022,
+      "avg_val_hits@3": 0.3815739095211029,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5157676786184311,
+      "avg_test_mrr": 0.3442415282130241,
+      "avg_test_hits@3": 0.41177853047847746,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.4833192408084869,
+      "round": 90
+    },
+    {
+      "avg_val_mrr": 0.3335693210363388,
+      "avg_val_hits@3": 0.37886856496334076,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.517701706290245,
+      "avg_test_mrr": 0.3444361537694931,
+      "avg_test_hits@3": 0.4027470231056213,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.48145807683467867,
+      "round": 100
+    }
+  ],
+  "purge": [
+    {
+      "avg_val_mrr": 0.3230315804481506,
+      "avg_val_hits@3": 0.38054282367229464,
+      "avg_val_hits@10": 0.9999999821186065,
+      "avg_val_auc_roc": 0.5115772217512131,
+      "avg_test_mrr": 0.34243111312389374,
+      "avg_test_hits@3": 0.40485831499099734,
+      "avg_test_hits@10": 1.0,
+      "avg_test_auc_roc": 0.4812937617301941,
+      "round": 8
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Toys",
+  "mode": "retrain",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "retrain": {
+      "avg_val_acc": {
+        "mean": 0.8031553471529925,
+        "std": 0.0012841979286126004
+      },
+      "avg_test_acc": {
+        "mean": 0.8035527335272895,
+        "std": 0.00041742644368532517
+      }
+    }
+  },
+  "summary_pretty": {
+    "retrain": {
+      "avg_val_acc": "80.32 \u00b1 0.13",
+      "avg_test_acc": "80.36 \u00b1 0.04"
+    }
+  }
+}

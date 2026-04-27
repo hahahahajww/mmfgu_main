@@ -1,0 +1,47 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Movies",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "client_unlearning": {
+      "before_avg_val_acc": {
+        "mean": 0.4930990626414617,
+        "std": 0.014881373644068833
+      },
+      "before_avg_test_acc": {
+        "mean": 0.48100705444812775,
+        "std": 0.023584605786143284
+      },
+      "after_avg_val_acc": {
+        "mean": 0.4912774632374446,
+        "std": 0.01888267109455907
+      },
+      "after_avg_test_acc": {
+        "mean": 0.4869757692019145,
+        "std": 0.015113921953015986
+      },
+      "delta_avg_val_acc": {
+        "mean": -0.001821599404017123,
+        "std": 0.029868425632182914
+      },
+      "delta_avg_test_acc": {
+        "mean": 0.005968714753786704,
+        "std": 0.03671833054254552
+      }
+    }
+  },
+  "summary_pretty": {
+    "client_unlearning": {
+      "before_avg_val_acc": "49.31 \u00b1 1.49",
+      "before_avg_test_acc": "48.10 \u00b1 2.36",
+      "after_avg_val_acc": "49.13 \u00b1 1.89",
+      "after_avg_test_acc": "48.70 \u00b1 1.51",
+      "delta_avg_val_acc": "-0.18 \u00b1 2.99",
+      "delta_avg_test_acc": "0.60 \u00b1 3.67"
+    }
+  }
+}

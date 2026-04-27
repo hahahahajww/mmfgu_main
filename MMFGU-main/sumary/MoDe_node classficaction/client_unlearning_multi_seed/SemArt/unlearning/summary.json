@@ -1,0 +1,47 @@
+{
+  "data_dir": "/root/autodl-tmp/MMFGU/datasets/SemArt",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "client_unlearning": {
+      "before_avg_val_acc": {
+        "mean": 0.8601696987946829,
+        "std": 0.006503435435875227
+      },
+      "before_avg_test_acc": {
+        "mean": 0.8640812456607818,
+        "std": 0.0023797694897814085
+      },
+      "after_avg_val_acc": {
+        "mean": 0.8539619902769724,
+        "std": 0.010100535382721449
+      },
+      "after_avg_test_acc": {
+        "mean": 0.857570743560791,
+        "std": 0.005775886619871365
+      },
+      "delta_avg_val_acc": {
+        "mean": -0.00620770851771039,
+        "std": 0.0037225229356118786
+      },
+      "delta_avg_test_acc": {
+        "mean": -0.00651050209999086,
+        "std": 0.003456576034795282
+      }
+    }
+  },
+  "summary_pretty": {
+    "client_unlearning": {
+      "before_avg_val_acc": "86.02 \u00b1 0.65",
+      "before_avg_test_acc": "86.41 \u00b1 0.24",
+      "after_avg_val_acc": "85.40 \u00b1 1.01",
+      "after_avg_test_acc": "85.76 \u00b1 0.58",
+      "delta_avg_val_acc": "-0.62 \u00b1 0.37",
+      "delta_avg_test_acc": "-0.65 \u00b1 0.35"
+    }
+  }
+}

@@ -1,0 +1,883 @@
+{
+  "config": {
+    "data_dir": "E:\\MMFGU\\datasets\\Grocery",
+    "task": "node_classification",
+    "num_clients": 10,
+    "hidden_dim": 256,
+    "dropout": 0.2,
+    "gnn_type": "sage",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 4096,
+    "federated_rounds": 100,
+    "local_epochs": 2,
+    "eval_interval": 10,
+    "forget_client_id": 0,
+    "seed": 44,
+    "device": "cuda",
+    "output_dir": "E:\\MMFGU\\Robustness\\outputs\\Grocery\\FUSED\\Grocery\\seed_44",
+    "cli_local_epochs": 1,
+    "cli_topk_layers": 4,
+    "fused_rounds": 5,
+    "fused_local_epochs": 2,
+    "adapter_density": 0.05,
+    "adapter_lr": 0.001
+  },
+  "cuda_type": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "client_order": [
+    4,
+    5,
+    0,
+    2,
+    9,
+    3,
+    7,
+    1,
+    8,
+    6
+  ],
+  "pretrain_final": {
+    "avg_train_acc": 0.9218974888324738,
+    "avg_val_acc": 0.8256965517997742,
+    "avg_test_acc": 0.8282902717590332
+  },
+  "runs": [
+    {
+      "target_client_ids": [
+        4
+      ],
+      "target_client_count": 1,
+      "before_global_metrics": {
+        "avg_train_acc": 0.922346035639445,
+        "avg_val_acc": 0.8270566463470459,
+        "avg_test_acc": 0.8331635064548917
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9385703139834933,
+        "avg_val_acc": 0.840011457602183,
+        "avg_test_acc": 0.843722767300076
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.016224278344048382,
+        "avg_val_acc_delta": 0.012954811255137089,
+        "avg_test_acc_delta": 0.010559260845184326
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.1580800626577
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52801168099924
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52478089978666
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52257995948062
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51427717480702
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.51218588507673
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119734306393169
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.25599514476573826
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.2559939529754044
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.25598454423909167
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.2559639946475759
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019998563103354544
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.1
+    },
+    {
+      "target_client_ids": [
+        4,
+        5
+      ],
+      "target_client_count": 2,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9188772961497307,
+        "avg_val_acc": 0.8214937672019005,
+        "avg_test_acc": 0.8266894742846489
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9376300871372223,
+        "avg_val_acc": 0.8353034034371376,
+        "avg_test_acc": 0.8375240862369537
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.018752790987491608,
+        "avg_val_acc_delta": 0.013809636235237122,
+        "avg_test_acc_delta": 0.01083461195230484
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.1590196549171
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.5279805519673
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.5249155529399
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.5231862662128
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51372451812017
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.5122399037818
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119586610412374
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.25599478666657166
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.2559943070859939
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.25598909912433815
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.2559729887376954
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019999697659352313
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.2
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0
+      ],
+      "target_client_count": 3,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9135427730424064,
+        "avg_val_acc": 0.8149352584566388,
+        "avg_test_acc": 0.8232965554509845
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9338480745043073,
+        "avg_val_acc": 0.829587629863194,
+        "avg_test_acc": 0.8348386543137687
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.020305301461900904,
+        "avg_val_acc_delta": 0.014652371406555176,
+        "avg_test_acc_delta": 0.011542098862784234
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.16091663937044
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52899608962102
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52470215779178
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52348353182232
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51473456088196
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.51289955594957
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119690538150917
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.2559948153662896
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.25599095582589654
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.2559044172595321
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.25590355689930105
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019999721723549396
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.3
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0,
+        2
+      ],
+      "target_client_count": 4,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9088117182254791,
+        "avg_val_acc": 0.8057483832041422,
+        "avg_test_acc": 0.8111043572425842
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9310244421164194,
+        "avg_val_acc": 0.8218669593334198,
+        "avg_test_acc": 0.8249808251857758
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.02221272389094031,
+        "avg_val_acc_delta": 0.016118576129277584,
+        "avg_test_acc_delta": 0.013876467943191528
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.15927811592456
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52801602075733
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52454839987197
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52301535034775
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51491036018511
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.5129468724952
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.11958908196866
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.25599284199521394
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.2559890149394687
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.25598827610137825
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.2559869111206838
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019999401355129533
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.4
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0,
+        2,
+        9
+      ],
+      "target_client_count": 5,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9188205122947692,
+        "avg_val_acc": 0.8239493370056152,
+        "avg_test_acc": 0.8221487522125244
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9419179677963256,
+        "avg_val_acc": 0.8362185597419739,
+        "avg_test_acc": 0.8295421123504638
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.023097455501556396,
+        "avg_val_acc_delta": 0.012269222736358665,
+        "avg_test_acc_delta": 0.007393360137939453
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.16054978793323
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52855167962387
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52451536647047
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52327227862446
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.5145959195007
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.51164052412874
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119595976650412
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.25599499601014003
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.25599322483170456
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.2559874695942114
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.25598392616673776
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.01999947467432654
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.5
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0,
+        2,
+        9,
+        3
+      ],
+      "target_client_count": 6,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9143638461828232,
+        "avg_val_acc": 0.8234469890594482,
+        "avg_test_acc": 0.8265197575092316
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9408233463764191,
+        "avg_val_acc": 0.8345462679862976,
+        "avg_test_acc": 0.8342112600803375
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.026459500193595886,
+        "avg_val_acc_delta": 0.011099278926849365,
+        "avg_test_acc_delta": 0.007691502571105957
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.15916236421646
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52808356294405
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52494079309811
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52316212160706
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51463550163963
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.5121822692323
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119473566351715
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.2559940239930237
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.2559936552896531
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.255989399754247
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.25598396394039585
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019999723289996874
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.6
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0,
+        2,
+        9,
+        3,
+        7
+      ],
+      "target_client_count": 7,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9128276705741882,
+        "avg_val_acc": 0.8223611315091451,
+        "avg_test_acc": 0.8330204884211222
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9418442447980245,
+        "avg_val_acc": 0.8353088100751241,
+        "avg_test_acc": 0.8401305675506592
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.0290165742238363,
+        "avg_val_acc_delta": 0.012947678565979004,
+        "avg_test_acc_delta": 0.007110079129536984
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.1602009866723
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52801176292363
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52477620477464
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52355582562335
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.5141207819011
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.51138987498375
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.11963472320716
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.2559954151685747
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.2559929215281981
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.25598427342023294
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.25593397691293135
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019999497056069935
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.7
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0,
+        2,
+        9,
+        3,
+        7,
+        1
+      ],
+      "target_client_count": 8,
+      "before_global_metrics": {
+        "avg_train_acc": 0.8939695060253143,
+        "avg_val_acc": 0.7941477596759796,
+        "avg_test_acc": 0.806416928768158
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9330240488052368,
+        "avg_val_acc": 0.8168750405311584,
+        "avg_test_acc": 0.8226331472396851
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.039054542779922485,
+        "avg_val_acc_delta": 0.022727280855178833,
+        "avg_test_acc_delta": 0.0162162184715271
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.16063935958704
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.5282847975344
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.5253678753431
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52370324259576
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51544653368573
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.51262262769622
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119667523031074
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.25599561941805227
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.25599330795469905
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.255977119495514
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.25596146601187164
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.019999707644977684
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.8
+    },
+    {
+      "target_client_ids": [
+        4,
+        5,
+        0,
+        2,
+        9,
+        3,
+        7,
+        1,
+        8
+      ],
+      "target_client_count": 9,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9090909361839294,
+        "avg_val_acc": 0.7822349667549133,
+        "avg_test_acc": 0.8263473510742188
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9403714537620544,
+        "avg_val_acc": 0.7793696522712708,
+        "avg_test_acc": 0.8263473510742188
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.031280517578125,
+        "avg_val_acc_delta": -0.002865314483642578,
+        "avg_test_acc_delta": 0.0
+      },
+      "cli": {
+        "local_epochs": 1,
+        "topk_layers": 4,
+        "selected_layers": [
+          "relation_fusion.net.0.weight",
+          "relation_fusion.net.3.weight",
+          "graph_module.conv2.lin_r.weight",
+          "graph_module.conv1.lin_r.weight"
+        ],
+        "scores": [
+          {
+            "layer": "relation_fusion.net.0.weight",
+            "diff": 393.15996707616864
+          },
+          {
+            "layer": "relation_fusion.net.3.weight",
+            "diff": 65.52843525985962
+          },
+          {
+            "layer": "graph_module.conv2.lin_r.weight",
+            "diff": 65.52529953551078
+          },
+          {
+            "layer": "graph_module.conv1.lin_r.weight",
+            "diff": 65.52271101094
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.weight",
+            "diff": 65.51353756369487
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.weight",
+            "diff": 65.51123181603374
+          },
+          {
+            "layer": "classifier.weight",
+            "diff": 5.119576198102347
+          },
+          {
+            "layer": "graph_module.conv1.lin_l.bias",
+            "diff": 0.2559900871394017
+          },
+          {
+            "layer": "relation_fusion.net.0.bias",
+            "diff": 0.2559887761979632
+          },
+          {
+            "layer": "relation_fusion.net.3.bias",
+            "diff": 0.2559876448006799
+          },
+          {
+            "layer": "graph_module.conv2.lin_l.bias",
+            "diff": 0.2559701859840468
+          },
+          {
+            "layer": "classifier.bias",
+            "diff": 0.01999961717831744
+          }
+        ]
+      },
+      "adapter": {
+        "density": 0.05,
+        "selected_param_count": 589824,
+        "active_adapter_count": 29770,
+        "total_float_param_count": 727060,
+        "compression_ratio_vs_full_model": 0.04094572662503782
+      },
+      "client_unlearn_ratio": 0.9
+    }
+  ]
+}

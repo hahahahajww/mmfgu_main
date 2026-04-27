@@ -1,0 +1,41 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Grocery",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "pretrain": {
+      "avg_val_acc": {
+        "mean": 0.822181123495102,
+        "std": 0.006185355560313989
+      },
+      "avg_test_acc": {
+        "mean": 0.8228510995705922,
+        "std": 0.009421567335102765
+      }
+    },
+    "unlearning": {
+      "after_avg_val_acc": {
+        "mean": 0.7989560299449496,
+        "std": 0.01164895788728219
+      },
+      "after_avg_test_acc": {
+        "mean": 0.8019574637766238,
+        "std": 0.016186654728033135
+      }
+    }
+  },
+  "summary_pretty": {
+    "pretrain": {
+      "avg_val_acc": "82.22 \u00b1 0.62",
+      "avg_test_acc": "82.29 \u00b1 0.94"
+    },
+    "unlearning": {
+      "after_avg_val_acc": "79.90 \u00b1 1.16",
+      "after_avg_test_acc": "80.20 \u00b1 1.62"
+    }
+  }
+}

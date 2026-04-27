@@ -1,0 +1,20 @@
+{
+  "pretrain_final": null,
+  "unlearning": null,
+  "retrain_baseline": null,
+  "client_unlearning": null,
+  "client_retrain_baseline": {
+    "removed_client_id": 0,
+    "remaining_client_count": 9,
+    "final_metrics": {
+      "avg_val_mrr": 0.8794720702701144,
+      "avg_val_hits@3": 0.9804577231407166,
+      "avg_val_hits@10": 1.0,
+      "avg_val_auc_roc": 0.9370608859592013,
+      "avg_test_mrr": 0.8820610907342699,
+      "avg_test_hits@3": 0.9799969924820794,
+      "avg_test_hits@10": 0.9999999933772616,
+      "avg_test_auc_roc": 0.9359467360708449
+    }
+  }
+}

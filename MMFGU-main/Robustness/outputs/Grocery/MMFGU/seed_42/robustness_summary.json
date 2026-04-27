@@ -1,0 +1,901 @@
+{
+  "config": {
+    "data_dir": "E:\\MMFGU\\datasets\\Grocery",
+    "task": "node_classification",
+    "num_clients": 10,
+    "hidden_dim": 256,
+    "dropout": 0.2,
+    "gnn_type": "sage",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 4096,
+    "federated_rounds": 100,
+    "local_epochs": 2,
+    "eval_interval": 1,
+    "unlearn_local_epochs": 10,
+    "probe_epochs": 3,
+    "probe_count": 50,
+    "probe_topk": 10,
+    "purge_rounds": 6,
+    "purge_local_epochs": 2,
+    "forget_client_id": 0,
+    "forget_ratio": 0.2,
+    "prototype_threshold": 0.65,
+    "lambda_neg": 0.15,
+    "alpha_dec": 1.0,
+    "alpha_anchor": 1.0,
+    "beta_mm": 1.0,
+    "delta_bd": 0.5,
+    "seed": 42,
+    "device": "cuda",
+    "output_dir": "E:\\MMFGU\\Robustness\\outputs\\Grocery\\seed_42",
+    "run_unlearning": false,
+    "run_retrain_baseline": false
+  },
+  "cuda_type": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "pretrain_final": {
+    "avg_train_acc": 0.9151187121868134,
+    "avg_val_acc": 0.8246092319488525,
+    "avg_test_acc": 0.8396602272987366
+  },
+  "client_order": [
+    7,
+    3,
+    2,
+    8,
+    5,
+    6,
+    9,
+    4,
+    0,
+    1
+  ],
+  "runs": [
+    {
+      "target_client_ids": [
+        7
+      ],
+      "target_client_count": 1,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9110094971126981,
+        "avg_val_acc": 0.8193663822280036,
+        "avg_test_acc": 0.8378127548429701
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.8821112712224325,
+        "avg_val_acc": 0.7974855634901259,
+        "avg_test_acc": 0.8043728338347541
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": -0.028898225890265583,
+        "avg_val_acc_delta": -0.021880818737877727,
+        "avg_test_acc_delta": -0.03343992100821602
+      },
+      "affected_client_ids": [
+        4,
+        9
+      ],
+      "affected_client_count": 2,
+      "prototype_similarities": [
+        {
+          "client_id": 4,
+          "similarity": 0.6874663829803467
+        },
+        {
+          "client_id": 9,
+          "similarity": 0.6694358587265015
+        },
+        {
+          "client_id": 3,
+          "similarity": 0.4624539911746979
+        },
+        {
+          "client_id": 1,
+          "similarity": 0.45178908109664917
+        },
+        {
+          "client_id": 6,
+          "similarity": 0.431835800409317
+        },
+        {
+          "client_id": 5,
+          "similarity": 0.4082701802253723
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.3540964126586914
+        },
+        {
+          "client_id": 8,
+          "similarity": 0.21842129528522491
+        },
+        {
+          "client_id": 2,
+          "similarity": 0.11436682194471359
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 50
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.9132886793878343,
+          "avg_val_acc": 0.8225172360738119,
+          "avg_test_acc": 0.8361003266440498,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9054620530870225,
+          "avg_val_acc": 0.8163012597295973,
+          "avg_test_acc": 0.8254126111666361,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.8949974973996481,
+          "avg_val_acc": 0.81119394964642,
+          "avg_test_acc": 0.8147395981682671,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.8859912488195631,
+          "avg_val_acc": 0.7994747691684299,
+          "avg_test_acc": 0.8083646165000068,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.8823559085528055,
+          "avg_val_acc": 0.7974714438120524,
+          "avg_test_acc": 0.8046164777543809,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.8821112712224325,
+          "avg_val_acc": 0.7974855634901259,
+          "avg_test_acc": 0.8043728338347541,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.1
+    },
+    {
+      "target_client_ids": [
+        7,
+        3
+      ],
+      "target_client_count": 2,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9105137065052986,
+        "avg_val_acc": 0.8213407471776009,
+        "avg_test_acc": 0.84283696860075
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9183563739061356,
+        "avg_val_acc": 0.8295002728700638,
+        "avg_test_acc": 0.8390907347202301
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.007842667400836945,
+        "avg_val_acc_delta": 0.008159525692462921,
+        "avg_test_acc_delta": -0.003746233880519867
+      },
+      "affected_client_ids": [
+        4,
+        8,
+        9
+      ],
+      "affected_client_count": 3,
+      "prototype_similarities": [
+        {
+          "client_id": 8,
+          "similarity": 0.7392337322235107
+        },
+        {
+          "client_id": 4,
+          "similarity": 0.6874663829803467
+        },
+        {
+          "client_id": 9,
+          "similarity": 0.6754365563392639
+        },
+        {
+          "client_id": 1,
+          "similarity": 0.5755002498626709
+        },
+        {
+          "client_id": 6,
+          "similarity": 0.5493039488792419
+        },
+        {
+          "client_id": 5,
+          "similarity": 0.4562334418296814
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.35728517174720764
+        },
+        {
+          "client_id": 2,
+          "similarity": 0.3367513120174408
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 50
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.9094304367899895,
+          "avg_val_acc": 0.8206341192126274,
+          "avg_test_acc": 0.8343705013394356,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9011571779847145,
+          "avg_val_acc": 0.8154179453849792,
+          "avg_test_acc": 0.828339233994484,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.9056136459112167,
+          "avg_val_acc": 0.819703958928585,
+          "avg_test_acc": 0.8253845125436783,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.9102959632873535,
+          "avg_val_acc": 0.8250569477677345,
+          "avg_test_acc": 0.8317958861589432,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9144485145807266,
+          "avg_val_acc": 0.826465554535389,
+          "avg_test_acc": 0.8384001031517982,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9183563739061356,
+          "avg_val_acc": 0.8295002728700638,
+          "avg_test_acc": 0.8390907347202301,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.2
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2
+      ],
+      "target_client_count": 3,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9128643189157758,
+        "avg_val_acc": 0.8235957707677569,
+        "avg_test_acc": 0.8407327107020787
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9247696910585675,
+        "avg_val_acc": 0.8321635893412999,
+        "avg_test_acc": 0.8388860736574445
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.011905372142791748,
+        "avg_val_acc_delta": 0.00856781857354294,
+        "avg_test_acc_delta": -0.0018466370446341696
+      },
+      "affected_client_ids": [
+        4,
+        8,
+        9
+      ],
+      "affected_client_count": 3,
+      "prototype_similarities": [
+        {
+          "client_id": 8,
+          "similarity": 0.7392337322235107
+        },
+        {
+          "client_id": 4,
+          "similarity": 0.7062751650810242
+        },
+        {
+          "client_id": 9,
+          "similarity": 0.6754365563392639
+        },
+        {
+          "client_id": 1,
+          "similarity": 0.5755002498626709
+        },
+        {
+          "client_id": 6,
+          "similarity": 0.5493039488792419
+        },
+        {
+          "client_id": 5,
+          "similarity": 0.4667593240737915
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.4218573570251465
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 48
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.9111986415726798,
+          "avg_val_acc": 0.8213867630277362,
+          "avg_test_acc": 0.8350815347262791,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9093748756817409,
+          "avg_val_acc": 0.8258131061281476,
+          "avg_test_acc": 0.8321030054773603,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.9140877042497907,
+          "avg_val_acc": 0.8275976181030273,
+          "avg_test_acc": 0.8329862015587943,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.9212862764086042,
+          "avg_val_acc": 0.8317280496869769,
+          "avg_test_acc": 0.8396608914647784,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9242268630436489,
+          "avg_val_acc": 0.8321929574012756,
+          "avg_test_acc": 0.8384960208620343,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9247696910585675,
+          "avg_val_acc": 0.8321635893412999,
+          "avg_test_acc": 0.8388860736574445,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.3
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2,
+        8
+      ],
+      "target_client_count": 4,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9045857091744741,
+        "avg_val_acc": 0.813100536664327,
+        "avg_test_acc": 0.8312564392884573
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.910695215066274,
+        "avg_val_acc": 0.8192775249481201,
+        "avg_test_acc": 0.8238044381141663
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.006109505891799927,
+        "avg_val_acc_delta": 0.0061769882837930945,
+        "avg_test_acc_delta": -0.007452001174291012
+      },
+      "affected_client_ids": [
+        4,
+        9
+      ],
+      "affected_client_count": 2,
+      "prototype_similarities": [
+        {
+          "client_id": 4,
+          "similarity": 0.7062751650810242
+        },
+        {
+          "client_id": 9,
+          "similarity": 0.6754365563392639
+        },
+        {
+          "client_id": 1,
+          "similarity": 0.5755002498626709
+        },
+        {
+          "client_id": 6,
+          "similarity": 0.5744682550430298
+        },
+        {
+          "client_id": 5,
+          "similarity": 0.4823281168937683
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.4337373375892639
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 48
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.9088085889816284,
+          "avg_val_acc": 0.8180567920207977,
+          "avg_test_acc": 0.8287273943424225,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9018320937951406,
+          "avg_val_acc": 0.8197461664676666,
+          "avg_test_acc": 0.8252499997615814,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.8982584973176321,
+          "avg_val_acc": 0.8137811919053396,
+          "avg_test_acc": 0.8178455730279287,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.9020333786805471,
+          "avg_val_acc": 0.8143022060394287,
+          "avg_test_acc": 0.8217619955539703,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9080496629079183,
+          "avg_val_acc": 0.8163294494152069,
+          "avg_test_acc": 0.8261865377426147,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.910695215066274,
+          "avg_val_acc": 0.8192775249481201,
+          "avg_test_acc": 0.8238044381141663,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.4
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2,
+        8,
+        5
+      ],
+      "target_client_count": 5,
+      "before_global_metrics": {
+        "avg_train_acc": 0.8992040872573852,
+        "avg_val_acc": 0.8051136136054993,
+        "avg_test_acc": 0.8335542440414428
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9126307964324951,
+        "avg_val_acc": 0.8197436213493348,
+        "avg_test_acc": 0.8271542072296143
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.013426709175109908,
+        "avg_val_acc_delta": 0.014630007743835494,
+        "avg_test_acc_delta": -0.006400036811828547
+      },
+      "affected_client_ids": [
+        4,
+        9
+      ],
+      "affected_client_count": 2,
+      "prototype_similarities": [
+        {
+          "client_id": 4,
+          "similarity": 0.7062751650810242
+        },
+        {
+          "client_id": 9,
+          "similarity": 0.6754365563392639
+        },
+        {
+          "client_id": 1,
+          "similarity": 0.5755002498626709
+        },
+        {
+          "client_id": 6,
+          "similarity": 0.5744682550430298
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.4337373375892639
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 50
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.8984094738960267,
+          "avg_val_acc": 0.8090189814567565,
+          "avg_test_acc": 0.8271247506141662,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.8956067681312561,
+          "avg_val_acc": 0.8123645782470703,
+          "avg_test_acc": 0.8239489316940307,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.8962876796722412,
+          "avg_val_acc": 0.8068484783172607,
+          "avg_test_acc": 0.8194217443466186,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.90257887840271,
+          "avg_val_acc": 0.8121452450752258,
+          "avg_test_acc": 0.8244852542877197,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9071524620056153,
+          "avg_val_acc": 0.8098308324813843,
+          "avg_test_acc": 0.8236567735671997,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9126307964324951,
+          "avg_val_acc": 0.8197436213493348,
+          "avg_test_acc": 0.8271542072296143,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.5
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2,
+        8,
+        5,
+        6
+      ],
+      "target_client_count": 6,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9138171821832657,
+        "avg_val_acc": 0.8216739147901535,
+        "avg_test_acc": 0.846109464764595
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9198232442140579,
+        "avg_val_acc": 0.8160376846790314,
+        "avg_test_acc": 0.8203543573617935
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.006006062030792236,
+        "avg_val_acc_delta": -0.005636230111122131,
+        "avg_test_acc_delta": -0.025755107402801514
+      },
+      "affected_client_ids": [
+        4,
+        9
+      ],
+      "affected_client_count": 2,
+      "prototype_similarities": [
+        {
+          "client_id": 4,
+          "similarity": 0.7062751650810242
+        },
+        {
+          "client_id": 9,
+          "similarity": 0.6754365563392639
+        },
+        {
+          "client_id": 1,
+          "similarity": 0.5755002498626709
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.4337373375892639
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 48
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.8965947479009628,
+          "avg_val_acc": 0.8190606534481049,
+          "avg_test_acc": 0.8286091983318329,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.8932182341814041,
+          "avg_val_acc": 0.8045666068792343,
+          "avg_test_acc": 0.8107168823480606,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.9077437669038773,
+          "avg_val_acc": 0.8120863139629364,
+          "avg_test_acc": 0.8233564645051956,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.9137111902236938,
+          "avg_val_acc": 0.8137036561965942,
+          "avg_test_acc": 0.8181941211223602,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9237027168273926,
+          "avg_val_acc": 0.8294730335474014,
+          "avg_test_acc": 0.8292541354894638,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9198232442140579,
+          "avg_val_acc": 0.8160376846790314,
+          "avg_test_acc": 0.8203543573617935,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.6
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2,
+        8,
+        5,
+        6,
+        9
+      ],
+      "target_client_count": 7,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9278846184412638,
+        "avg_val_acc": 0.8317971030871073,
+        "avg_test_acc": 0.8671569426854452
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9433862566947937,
+        "avg_val_acc": 0.8376969893773397,
+        "avg_test_acc": 0.856073240439097
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.015501638253529904,
+        "avg_val_acc_delta": 0.0058998862902324145,
+        "avg_test_acc_delta": -0.011083702246348137
+      },
+      "affected_client_ids": [
+        1,
+        4
+      ],
+      "affected_client_count": 2,
+      "prototype_similarities": [
+        {
+          "client_id": 1,
+          "similarity": 0.8145291209220886
+        },
+        {
+          "client_id": 4,
+          "similarity": 0.7062751650810242
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.44560903310775757
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 49
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.8839664459228516,
+          "avg_val_acc": 0.7903428276379904,
+          "avg_test_acc": 0.8220428824424744,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9058829545974731,
+          "avg_val_acc": 0.804075558980306,
+          "avg_test_acc": 0.8334048191706339,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.931635856628418,
+          "avg_val_acc": 0.8240670959154764,
+          "avg_test_acc": 0.8466198444366455,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.9321864048639933,
+          "avg_val_acc": 0.8324121435483297,
+          "avg_test_acc": 0.8533851305643717,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9334874351819357,
+          "avg_val_acc": 0.8257433374722799,
+          "avg_test_acc": 0.84755406777064,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9433862566947937,
+          "avg_val_acc": 0.8376969893773397,
+          "avg_test_acc": 0.856073240439097,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.7
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2,
+        8,
+        5,
+        6,
+        9,
+        4
+      ],
+      "target_client_count": 8,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9575412273406982,
+        "avg_val_acc": 0.873795360326767,
+        "avg_test_acc": 0.9146594405174255
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9415218532085419,
+        "avg_val_acc": 0.8432143330574036,
+        "avg_test_acc": 0.8746898174285889
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": -0.016019374132156372,
+        "avg_val_acc_delta": -0.030581027269363403,
+        "avg_test_acc_delta": -0.03996962308883667
+      },
+      "affected_client_ids": [
+        1
+      ],
+      "affected_client_count": 1,
+      "prototype_similarities": [
+        {
+          "client_id": 1,
+          "similarity": 0.8145291209220886
+        },
+        {
+          "client_id": 0,
+          "similarity": 0.4471554160118103
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 48
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.931522935628891,
+          "avg_val_acc": 0.8479792177677155,
+          "avg_test_acc": 0.8774970471858978,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9190477132797241,
+          "avg_val_acc": 0.8215927183628082,
+          "avg_test_acc": 0.8600270748138428,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.9506449401378632,
+          "avg_val_acc": 0.8600338995456696,
+          "avg_test_acc": 0.8932083249092102,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.9597344100475311,
+          "avg_val_acc": 0.8556244671344757,
+          "avg_test_acc": 0.8917838335037231,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9508633017539978,
+          "avg_val_acc": 0.8496859669685364,
+          "avg_test_acc": 0.8918255865573883,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9415218532085419,
+          "avg_val_acc": 0.8432143330574036,
+          "avg_test_acc": 0.8746898174285889,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.8
+    },
+    {
+      "target_client_ids": [
+        7,
+        3,
+        2,
+        8,
+        5,
+        6,
+        9,
+        4,
+        0
+      ],
+      "target_client_count": 9,
+      "before_global_metrics": {
+        "avg_train_acc": 0.9568706154823303,
+        "avg_val_acc": 0.8729729652404785,
+        "avg_test_acc": 0.9090909361839294
+      },
+      "after_global_metrics": {
+        "avg_train_acc": 0.9598796367645264,
+        "avg_val_acc": 0.870270311832428,
+        "avg_test_acc": 0.9061583280563354
+      },
+      "metric_delta": {
+        "avg_train_acc_delta": 0.003009021282196045,
+        "avg_val_acc_delta": -0.002702653408050537,
+        "avg_test_acc_delta": -0.002932608127593994
+      },
+      "affected_client_ids": [
+        1
+      ],
+      "affected_client_count": 1,
+      "prototype_similarities": [
+        {
+          "client_id": 1,
+          "similarity": 0.8145291209220886
+        }
+      ],
+      "probe_stats": {
+        "probe_count": 45
+      },
+      "purge_history": [
+        {
+          "avg_train_acc": 0.8625877499580383,
+          "avg_val_acc": 0.7891892194747925,
+          "avg_test_acc": 0.8152492642402649,
+          "round": 1
+        },
+        {
+          "avg_train_acc": 0.9538615942001343,
+          "avg_val_acc": 0.8675675988197327,
+          "avg_test_acc": 0.900293231010437,
+          "round": 2
+        },
+        {
+          "avg_train_acc": 0.8535606861114502,
+          "avg_val_acc": 0.7324324250221252,
+          "avg_test_acc": 0.7712609767913818,
+          "round": 3
+        },
+        {
+          "avg_train_acc": 0.8946840763092041,
+          "avg_val_acc": 0.8297297358512878,
+          "avg_test_acc": 0.8621701002120972,
+          "round": 4
+        },
+        {
+          "avg_train_acc": 0.9669007062911987,
+          "avg_val_acc": 0.862162172794342,
+          "avg_test_acc": 0.900293231010437,
+          "round": 5
+        },
+        {
+          "avg_train_acc": 0.9598796367645264,
+          "avg_val_acc": 0.870270311832428,
+          "avg_test_acc": 0.9061583280563354,
+          "round": 6
+        }
+      ],
+      "client_unlearn_ratio": 0.9
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\RedditS",
+  "mode": "unlearning",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "summary": {
+    "client_unlearning": {
+      "before_avg_val_acc": {
+        "mean": 0.9621389945348104,
+        "std": 0.0034254958084087147
+      },
+      "before_avg_test_acc": {
+        "mean": 0.9635565678278605,
+        "std": 0.005368656343586845
+      },
+      "after_avg_val_acc": {
+        "mean": 0.9607876340548197,
+        "std": 0.002553923461825544
+      },
+      "after_avg_test_acc": {
+        "mean": 0.9617693106333415,
+        "std": 0.004605971147525211
+      },
+      "delta_avg_val_acc": {
+        "mean": -0.0013513604799906636,
+        "std": 0.0010783470705834888
+      },
+      "delta_avg_test_acc": {
+        "mean": -0.0017872571945190356,
+        "std": 0.002144401551080189
+      }
+    }
+  },
+  "summary_pretty": {
+    "client_unlearning": {
+      "before_avg_val_acc": "96.21 \u00b1 0.34",
+      "before_avg_test_acc": "96.36 \u00b1 0.54",
+      "after_avg_val_acc": "96.08 \u00b1 0.26",
+      "after_avg_test_acc": "96.18 \u00b1 0.46",
+      "delta_avg_val_acc": "-0.14 \u00b1 0.11",
+      "delta_avg_test_acc": "-0.18 \u00b1 0.21"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\RedditS",
+  "task": "node_classification",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "retain_interval": 2,
+  "calibration_ratio": 2.0,
+  "runs": [
+    {
+      "pretrain_final": {
+        "avg_train_acc": 0.9992703855037689,
+        "avg_val_acc": 0.9605821669101715,
+        "avg_test_acc": 0.9598016858100891
+      },
+      "fed_eraser": {
+        "removed_client_id": 0,
+        "retain_interval": 2,
+        "calibration_ratio": 2.0,
+        "calibration_local_epochs": 4,
+        "retained_round_count": 50,
+        "before_global_metrics": {
+          "avg_train_acc": 0.9995431701342264,
+          "avg_val_acc": 0.9603821370336745,
+          "avg_test_acc": 0.957692113187578
+        },
+        "after_global_metrics": {
+          "avg_train_acc": 0.9968589411841499,
+          "avg_val_acc": 0.9596438407897949,
+          "avg_test_acc": 0.9563860760794746
+        },
+        "metric_delta": {
+          "avg_train_acc_delta": -0.0026842289500765837,
+          "avg_val_acc_delta": -0.0007382962438795548,
+          "avg_test_acc_delta": -0.0013060371081033972
+        },
+        "reconstruction_seconds": 98.43674182891846
+      }
+    },
+    {
+      "pretrain_final": {
+        "avg_train_acc": 0.9992601215839386,
+        "avg_val_acc": 0.9660664141178131,
+        "avg_test_acc": 0.9697057902812958
+      },
+      "fed_eraser": {
+        "removed_client_id": 0,
+        "retain_interval": 2,
+        "calibration_ratio": 2.0,
+        "calibration_local_epochs": 4,
+        "retained_round_count": 50,
+        "before_global_metrics": {
+          "avg_train_acc": 0.9992964996231927,
+          "avg_val_acc": 0.9663242101669312,
+          "avg_test_acc": 0.9690917465421889
+        },
+        "after_global_metrics": {
+          "avg_train_acc": 0.9957993030548096,
+          "avg_val_acc": 0.9647377928098043,
+          "avg_test_acc": 0.9645468062824674
+        },
+        "metric_delta": {
+          "avg_train_acc_delta": -0.0034971965683830986,
+          "avg_val_acc_delta": -0.0015864173571268347,
+          "avg_test_acc_delta": -0.004544940259721519
+        },
+        "reconstruction_seconds": 97.96069502830505
+      }
+    },
+    {
+      "pretrain_final": {
+        "avg_train_acc": 0.9984335362911224,
+        "avg_val_acc": 0.9597684025764466,
+        "avg_test_acc": 0.9611622273921967
+      },
+      "fed_eraser": {
+        "removed_client_id": 0,
+        "retain_interval": 2,
+        "calibration_ratio": 2.0,
+        "calibration_local_epochs": 4,
+        "retained_round_count": 50,
+        "before_global_metrics": {
+          "avg_train_acc": 0.9983758330345154,
+          "avg_val_acc": 0.9594648877779642,
+          "avg_test_acc": 0.9603630900382996
+        },
+        "after_global_metrics": {
+          "avg_train_acc": 0.9963947534561157,
+          "avg_val_acc": 0.9664843877156576,
+          "avg_test_acc": 0.9643864962789748
+        },
+        "metric_delta": {
+          "avg_train_acc_delta": -0.001981079578399658,
+          "avg_val_acc_delta": 0.007019499937693352,
+          "avg_test_acc_delta": 0.004023406240675209
+        },
+        "reconstruction_seconds": 98.9446930885315
+      }
+    }
+  ],
+  "summary": {
+    "before_test": {
+      "mean": 0.9623823165893555,
+      "std": 0.005962035479033674
+    },
+    "after_test": {
+      "mean": 0.9617731262136389,
+      "std": 0.004666010789240088
+    },
+    "delta_test": {
+      "mean": -0.0006091903757165692,
+      "std": 0.004326469341627635
+    },
+    "reconstruction_seconds": {
+      "mean": 98.447376648585,
+      "std": 0.4920852265353577
+    }
+  }
+}

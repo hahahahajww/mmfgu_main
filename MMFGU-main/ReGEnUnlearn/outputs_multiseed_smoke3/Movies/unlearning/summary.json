@@ -1,0 +1,29 @@
+{
+  "data_dir": "E:\\MMFGU\\datasets\\Movies",
+  "mode": "unlearning",
+  "seeds": [
+    42
+  ],
+  "summary": {
+    "pretrain": {
+      "avg_val_acc": {
+        "mean": 0.3292153999209404,
+        "std": 0.0
+      },
+      "avg_test_acc": {
+        "mean": 0.3299582153558731,
+        "std": 0.0
+      }
+    },
+    "unlearning": {
+      "after_avg_val_acc": {
+        "mean": 0.3317377765973409,
+        "std": 0.0
+      },
+      "after_avg_test_acc": {
+        "mean": 0.3308267494042714,
+        "std": 0.0
+      }
+    }
+  }
+}

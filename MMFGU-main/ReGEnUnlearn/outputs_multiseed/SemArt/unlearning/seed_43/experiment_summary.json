@@ -1,0 +1,85 @@
+{
+  "pretrain_final": {
+    "avg_train_acc": 0.927514773607254,
+    "avg_val_acc": 0.8716778755187988,
+    "avg_test_acc": 0.863826185464859
+  },
+  "unlearning": {
+    "target_client_ids": [
+      0
+    ],
+    "before_global_metrics": {
+      "avg_train_acc": 0.927514773607254,
+      "avg_val_acc": 0.8716778755187988,
+      "avg_test_acc": 0.863826185464859
+    },
+    "after_remaining_metrics": {
+      "avg_train_acc": 0.8861019147766961,
+      "avg_val_acc": 0.8438639574580722,
+      "avg_test_acc": 0.8406676517592536
+    },
+    "metric_delta": {
+      "avg_train_acc_delta": -0.0414128588305579,
+      "avg_val_acc_delta": -0.02781391806072664,
+      "avg_test_acc_delta": -0.02315853370560539
+    },
+    "affected_client_ids": [
+      7,
+      9
+    ],
+    "prototype_similarities": [
+      {
+        "client_id": 9,
+        "similarity": 0.5207677483558655
+      },
+      {
+        "client_id": 7,
+        "similarity": 0.2769532799720764
+      },
+      {
+        "client_id": 5,
+        "similarity": 0.13704270124435425
+      },
+      {
+        "client_id": 6,
+        "similarity": 0.0532500222325325
+      },
+      {
+        "client_id": 3,
+        "similarity": -0.042540043592453
+      },
+      {
+        "client_id": 2,
+        "similarity": -0.06207915022969246
+      },
+      {
+        "client_id": 8,
+        "similarity": -0.06364208459854126
+      },
+      {
+        "client_id": 1,
+        "similarity": -0.10886432230472565
+      },
+      {
+        "client_id": 4,
+        "similarity": -0.19608137011528015
+      }
+    ],
+    "target_artifacts": [
+      {
+        "client_id": 0,
+        "selected_node_count": 533,
+        "sampled_subgraph_nodes": 1795,
+        "sampler_reward": 0.800106936102321,
+        "overlap_proxy": 0.3423812985420227,
+        "utility_after_sampler_ascent": 0.6926714181900024,
+        "prompt": {
+          "token_count": 16,
+          "insert_count": 359,
+          "prompt_norm": 0.7779613137245178
+        }
+      }
+    ]
+  },
+  "retrain_baseline": null
+}

@@ -1,0 +1,116 @@
+{
+  "pretrain_final": {
+    "avg_train_acc": 0.868593966960907,
+    "avg_val_acc": 0.7924218595027923,
+    "avg_test_acc": 0.802197527885437
+  },
+  "fused": {
+    "removed_client_id": 0,
+    "before_global_metrics": {
+      "avg_train_acc": 0.8790686130523682,
+      "avg_val_acc": 0.8091746767361959,
+      "avg_test_acc": 0.81523464123408
+    },
+    "after_global_metrics": {
+      "avg_train_acc": 0.9995498259862264,
+      "avg_val_acc": 0.7999291883574592,
+      "avg_test_acc": 0.8066773811976115
+    },
+    "metric_delta": {
+      "avg_train_acc_delta": 0.12048121293385827,
+      "avg_val_acc_delta": -0.009245488378736733,
+      "avg_test_acc_delta": -0.008557260036468506
+    },
+    "forgotten_client_metrics_before": {
+      "train_acc": 0.7743221521377563,
+      "val_acc": 0.6416465044021606,
+      "test_acc": 0.6848635077476501
+    },
+    "forgotten_client_metrics_after": {
+      "train_acc": 0.719298243522644,
+      "val_acc": 0.6513317227363586,
+      "test_acc": 0.6724565625190735
+    },
+    "cli": {
+      "local_epochs": 1,
+      "topk_layers": 25,
+      "selected_layers": [
+        "relation_fusion.net.0.weight",
+        "relation_fusion.net.3.weight",
+        "graph_module.conv1.lin_r.weight",
+        "graph_module.conv1.lin_l.weight",
+        "graph_module.conv2.lin_l.weight",
+        "graph_module.conv2.lin_r.weight",
+        "classifier.weight",
+        "graph_module.conv2.lin_l.bias",
+        "relation_fusion.net.0.bias",
+        "relation_fusion.net.3.bias",
+        "graph_module.conv1.lin_l.bias",
+        "classifier.bias"
+      ],
+      "scores": [
+        {
+          "layer": "relation_fusion.net.0.weight",
+          "diff": 393.1617333872303
+        },
+        {
+          "layer": "relation_fusion.net.3.weight",
+          "diff": 65.5292870459411
+        },
+        {
+          "layer": "graph_module.conv1.lin_r.weight",
+          "diff": 65.52309614404096
+        },
+        {
+          "layer": "graph_module.conv1.lin_l.weight",
+          "diff": 65.5225017437317
+        },
+        {
+          "layer": "graph_module.conv2.lin_l.weight",
+          "diff": 65.52223983497986
+        },
+        {
+          "layer": "graph_module.conv2.lin_r.weight",
+          "diff": 65.52188121779986
+        },
+        {
+          "layer": "classifier.weight",
+          "diff": 4.607717487425527
+        },
+        {
+          "layer": "graph_module.conv2.lin_l.bias",
+          "diff": 0.25599298268746207
+        },
+        {
+          "layer": "relation_fusion.net.0.bias",
+          "diff": 0.25599050434486126
+        },
+        {
+          "layer": "relation_fusion.net.3.bias",
+          "diff": 0.2559904823645384
+        },
+        {
+          "layer": "graph_module.conv1.lin_l.bias",
+          "diff": 0.2559890588758226
+        },
+        {
+          "layer": "classifier.bias",
+          "diff": 0.01799956702336152
+        }
+      ]
+    },
+    "adapter": {
+      "density": 0.4,
+      "selected_param_count": 726546,
+      "active_adapter_count": 290657,
+      "total_float_param_count": 726546,
+      "compression_ratio_vs_full_model": 0.40005312808824217
+    },
+    "reversible": {
+      "base_model_path": "base_global_model.pt",
+      "adapter_path": "adapter_state.pt",
+      "mask_path": "adapter_masks.pt",
+      "restore_note": "Removing adapters restores the pretrained base model."
+    }
+  }
+}
